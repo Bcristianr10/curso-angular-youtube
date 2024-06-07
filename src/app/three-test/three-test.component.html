@@ -1,0 +1,29 @@
+<div class="section">
+    <h6 >3 Start with the three test component</h6>
+    <p class="m-0">3.1 Services and Dependency Injection</p>
+    <div class=" d-flex flex-column">
+        <p class="m-0">Using the service <b>"comunicationService"</b> to get the name of the brother</p>
+        <p class="m-0">Name of brother: {{ nameSmallBrother }}</p>
+        <div class="d-flex gap-1">
+            <button class="btn btn-primary" (click)="greet()">Greet</button>
+            <button class="btn btn-primary" (click)="askAboutTheSon()">Ask about the son</button>
+        </div>
+    </div>
+</div>
+<!-- Directives -->
+<div class="section">
+    <h6>4 Directives</h6>
+    <div appStyleBrothers class="rounded">
+        <p class="mt-0">4.1 using the directive <b>"appStyleBrothers"</b></p>
+        <p class="mt-0">This directive is used to change the background color of the element (div)</p>
+    </div>
+</div>
+<!-- Pipes -->
+<div class="section">
+    <h6 >5 Pipes</h6>
+    <p class="m-0">5.1 Using the pipe <b>"uppercasePipe, myPipe and datePipe"</b></p>
+    <p class="m-0">Examples of pipes:</p>    
+    <p class="m-0">Name of brother: {{ nameSmallBrother | uppercase | lowercase }}</p>
+    <p class="m-0">Custome pipe: {{ nameSmallBrother | myPipe }}</p>
+    <p class="m-0">Date: {{ myDate | date:'short' }}</p>
+</div>
